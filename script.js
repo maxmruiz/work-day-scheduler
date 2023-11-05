@@ -1,9 +1,11 @@
+// Commonly used elements 
 var currentDay = $('#currentDay');
 var currentTime = $('#currentTime');
 var timeBlock = $('.time-block');
 
 $(function () {
 
+    // Formatting the date and time at the top of the page
     function updateTime(){
         var date = dayjs().format('dddd, MMMM D, YYYY');
         var time = dayjs().format('h:mm A');
@@ -35,12 +37,8 @@ $(function () {
 
         updateTime();
 
-        setInterval(updateTime, 60000);
+        setInterval(updateTime, 60000); // Updating every minute
     });
-
-    updateTime();
-
-    setInterval(updateTime, 60000); // Updating the time every minute
 
     $('.saveBtn').on('click', function (){
         var description = $(this).siblings('.description').val();
