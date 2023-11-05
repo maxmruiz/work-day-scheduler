@@ -24,11 +24,11 @@ $(function () {
             var blockHour = parseInt($(this).attr('id').replace('hour-', ''), 10);
 
             if (blockHour < currentHour){
-                $(this).removeClass('future present').addClass('past'); // If the hour entered if less than the current hour, it is considered in the past
+                $(this).addClass('past'); // If the hour entered if less than the current hour, it is considered in the past
             } else if (blockHour === currentHour){
-                $(this).removeClass('future past').addClass('present'); // If the entered hour is the same as the current hour, it is considered in the present
+                $(this).addClass('present'); // If the entered hour is the same as the current hour, it is considered in the present
             } else {
-                $(this).removeClass('past present').addClass('future'); // If it is more than the current time, it is considered the future.
+                $(this).addClass('future'); // If it is more than the current time, it is considered the future.
             }
         });
     }
@@ -67,5 +67,5 @@ $(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
-  });
+});
   
