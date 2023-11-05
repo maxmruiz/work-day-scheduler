@@ -1,4 +1,4 @@
-### Work Day Scheduler
+# Work Day Scheduler
 
 ## Description
 Schedulers are a great way to keep your professional life organized. The typical work hours are 9AM to 5PM, which is always showcased in this project.
