@@ -11,4 +11,4 @@ This project was made using Javascript/jQuery, HTML, and CSS. One of the first t
 ![Second screenshot showcasing the entered message and alert saying "Your changes have been saved"](./assets/images/SC-2.png)
 
 ## Link
-Need to keep your work life organized? Click this link to fix your work schedule.
+Need to keep your work life organized? Click this [link](https://maxmruiz.github.io/work-day-scheduler/) to fix your work schedule.
