@@ -37,6 +37,15 @@ $(function () {
 
         alert('Your changes have been saved.'); // Notifying the user when their changes have been saved.
     });
+
+    // The following function is to keep the users data persistent even upon the page being reloaded
+    $('.time-block').each(function(){
+        var timeBlock = $(this).attr('id');
+        var savedDescription = localStorage.getItem(description);
+        if (savedDescription){
+            $(this).find('.description').val(savedDescription);
+        }
+    });
     //
     // TODO: Add code to apply the past, present, or future class to each time
     // block by comparing the id to the current hour. HINTS: How can the id
